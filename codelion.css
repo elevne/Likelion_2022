@@ -1,0 +1,23 @@
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #919191;
+}
+
+p {
+    font-size: 30px;
+}
+
+.small-font {
+    font-size: 15px;
+}
+
+.mainbox {
+    border: 5px solid black;
+    width: 610px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin: 30px;
+}
