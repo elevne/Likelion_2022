@@ -1,19 +1,15 @@
-information = {"ê³ í–¥":"ìˆ˜ì›", "ì·¨ë¯¸":"ì˜í™”ê´€ëŒ","ì¢‹ì•„í•˜ëŠ” ìŒì‹":"êµ­ìˆ˜"}
-foods = ["ëœì¥ì°Œê°œ", "í”¼ì", "ì œìœ¡ë³¶ìŒ"]
+for x in range(30):
+    print(x)
 
-print(information.get("ì·¨ë¯¸"))
 
-information["íŠ¹ê¸°"] = "í”¼ì•„ë…¸"
-information["ì‚¬ëŠ”ê³³"] = "ì„œìš¸"
+foods = ["µÈÀåÂî°³", "ÇÇÀÚ", "Á¦À°ººÀ½"]
+for x in range(3):
+    print(foods[x])
 
-del information["ì¢‹ì•„í•˜ëŠ” ìŒì‹"]
-print(information)
-print(len(information))
+for x in foods:
+    print(x)
 
-information.clear()
-print(information)
-
-print(foods[-2])
-foods.append("ê¹€ë°¥")
-del foods[1]
-print(foods)
+info = {'°íÇâ':'¼ö¿ø','Ãë¹Ì':'¿µÈ­°ü¶÷','ÁÁ¾ÆÇÏ´Â À½½Ä':'±¹¼ö'}
+for x, y in info.items():
+    print(x)
+    print(y)
