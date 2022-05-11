@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4번강의.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="hello">안녕하세요</h2>
+    <div class="alert-box" id="alert">
+        <p>Alert 박스</p>
+        <buttom onclick="control_Alert('none')">닫기</buttom>
+    </div>
+    <button onclick="control_Alert('block')">버튼</button>
+    
+
+    <script>
+
+        function control_Alert(a){
+            document.getElementById('alert').style.display = a;
+        }
+
+        
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6번강의.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="test">안녕하세요</h2>
+
+
+    <div class="alert-box" id="alert">
+        <p id="title">Alert 박스</p>
+        <button id='close'>닫기</button>
+    </div>
+    <button onclick="open_First('id좀입력해라')">버튼1</button>
+    <button onclick="open_First('비번좀입력해라')">버튼2</button>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+
+        $('#test').text('안녕');
+        $('#test').addClass('yellow-bg')
+
+        function open_First(text){
+            document.getElementById('title').innerHTML = text;
+            document.getElementById('alert').style.display = 'block';
+        }
+
+        function control_Alert(a){
+            document.getElementById('alert').style.display = a;
+        }
+
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+    
+    </script>
+
+</body>
+</html>

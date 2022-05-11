@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="5번강의.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="hello">안녕하세요</h2>
+    <div class="alert-box" id="alert">
+        <p id="title">Alert 박스</p>
+        <button id='close'>닫기</button>
+    </div>
+    <button onclick="open_First('id좀입력해라')">버튼1</button>
+    <button onclick="open_First('비번좀입력해라')">버튼2</button>
+    
+
+    <script>
+
+        function open_First(text){
+            document.getElementById('title').innerHTML = text;
+            document.getElementById('alert').style.display = 'block';
+        }
+
+        function control_Alert(a){
+            document.getElementById('alert').style.display = a;
+        }
+
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+    
+    </script>
+
+</body>
+</html>
